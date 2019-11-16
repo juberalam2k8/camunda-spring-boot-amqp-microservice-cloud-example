@@ -8,6 +8,6 @@ node{
        def mvnHome = tool name: 'apache-maven-3.6.2', type: 'maven'
        bat "${mvnHome}/bin/mvn clean package"
        app = docker.build("juberalam2k8/camunda-spring-boot-amqp-microservice-cloud-example")
-
+     }
 
 }
